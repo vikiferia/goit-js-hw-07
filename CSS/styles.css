@@ -1,0 +1,37 @@
+html {
+    box-sizing: border-box;
+}
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+    object-position: center;
+}
+
+.gallery {
+ display: flex; 
+ justify-content:space-between;
+ flex-wrap: wrap;
+ margin-top: 20px;
+ 
+ 
+}
+
+.gallery-item {
+    
+list-style-type: none;
+padding-bottom: 10px;
+width: calc((100% -90px) / 3);
+    text-align: center;
+}
+
+.gallery-image {
+width: 360px;
+}
+
