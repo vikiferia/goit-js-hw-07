@@ -35,3 +35,15 @@ width: calc((100% -90px) / 3);
 width: 360px;
 }
 
+
+#validation-input {
+  border: 3px solid #bdbdbd;
+}
+
+#validation-input.valid {
+  border-color: #4caf50;
+}
+
+#validation-input.invalid {
+  border-color: #f44336;
+}
