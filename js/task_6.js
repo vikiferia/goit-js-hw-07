@@ -17,8 +17,10 @@ return validationInput.classList.add("invalid");
 
 function onInput (event) {    
     console.log(event.currentTarget.value);
-    if (event.currentTarget.value > 6) {
-        return onBlur;
+    const dataLength = 6;
+    if (event.currentTarget.value.length > dataLength) {
+        validationInput.classList.remove("valid");
+       return validationInput.classList.add("invalid");
     }
            
 };
