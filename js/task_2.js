@@ -7,7 +7,7 @@ const ingredients = [
   'Приправы',
 ];
 
-const ingredientsContainerLiEl = document.querySelector('.ingredients');
+const ingredientsContainerLiEl = document.querySelector('#ingredients');
 
 const makeIngredientsLiEl = products => {
     return ingredients.map(product => {
