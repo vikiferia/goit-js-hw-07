@@ -13,9 +13,7 @@ function getBox() {
    createBoxes(amount);
 }
 
-//console.log(getBoxes);
 
-// let amount = +document.querySelector('#controls input').value;
 
 function createBoxes(amount) {
     let basicSize = 30;
@@ -23,15 +21,9 @@ function createBoxes(amount) {
     for (let i = 0; i < amount; i++ ) {
         let size = basicSize + i * 10;
         const divElement = document.createElement("div");
-        //divElement.style.backgroundColor = red;
+       
          divElement.style.cssText = `width: ${size}px; height: ${ size }px; background-color: rgba(${random()}, ${random()},${random()} );`
-        // divElement.style.cssText = `background-color: rgb(${ Math.floor(Math.random() * 100) } %, ${ Math.floor(Math.random() * 100) }%)`;
-        //  divElement.style.cssText =`width: ${size} px`; 
-        //  divElement.style.cssText = `height: ${ size } px`;
-        // divElement.style.backgroundColor = ` rgb(${ Math.floor(Math.random(255) * 100) } %, ${ Math.floor(Math.random(255) * 100) }%)`;
-        //  divElement.style.backgroundColor = `rgba(${ramdom()}, ${ramdom()},${ramdom()} )`;
-        //  divElement.style.width =` ${size}px`; 
-        // divElement.style.height = ` ${size}px`;
+    
         fragment.appendChild(divElement);
       
     }

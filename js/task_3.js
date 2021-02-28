@@ -18,19 +18,21 @@ const images = [
 
 const galleryEl = document.querySelector('#gallery');
 
-const makeGalleryLiEl = galleryimages => {
-         
-         return images.map(image => {
-        galleryEl.insertAdjacentHTML('afterend', `<li class = "gallery-item"><img class = "gallery-image" src="${image.url}" alt="${image.alt}"></li>`); 
-       
-        return galleryEl;
-    })
+
+function makeGalleryLiEl(images) {
+  return images
+    .map(({ url, alt }) => {
+      return `<li class = "gallery-item"><img class = "gallery-image" src="${url}" alt="${alt}"></li>`;
+    }
     
-};
+  )
+  .join('');
+}
+
+const createGallery = makeGalleryLiEl(images); 
+ galleryEl.insertAdjacentHTML('afterend', createGallery)
 
 
-
-// console.log(makeGalleryLiEl(images));
 
 
 

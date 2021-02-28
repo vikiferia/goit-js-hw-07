@@ -19,6 +19,6 @@ const makeIngredientsLiEl = products => {
 
 const element = makeIngredientsLiEl(ingredients);
 
-// console.log(element);
+
  
 ingredientsContainerLiEl.append(...element)
